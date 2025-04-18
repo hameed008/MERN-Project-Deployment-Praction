@@ -1,4 +1,4 @@
-this is my `package.json`:
+**Q1:** this is my `package.json`:
 
 ```js
 {
@@ -72,3 +72,25 @@ project-root/
 ```
 
 and i am getting the `MONGO_URI` as undefined [Ans-1]()
+
+**Q2:** why the `package.json` is outside the `frontend` and `backend` here:
+
+```
+mern-app/
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   ├── controllers/
+│   └── ...
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── ...
+├── .env.development
+├── .env.production
+├── .env.test
+├── package.json
+├── README.md
+```
+
+[Ans-2]()
