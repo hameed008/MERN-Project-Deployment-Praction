@@ -1,13 +1,26 @@
 {
   "name": "guide-to-deploy-node-jsexpress-backend-to-render",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "NODE_ENV=production node backend/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon backend/server.js",
+    "test": "NODE_ENV=test jest",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
   },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }

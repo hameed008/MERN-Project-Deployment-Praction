@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/test`)
+    axios.get(`${import.meta.env.VITE_API_URL}/test`)
       .then(res => setMessage(res.data));
   }, []);
 
