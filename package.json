@@ -1,0 +1,13 @@
+{
+  "name": "guide-to-deploy-node-jsexpress-backend-to-render",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
